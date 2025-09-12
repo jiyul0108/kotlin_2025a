@@ -32,14 +32,33 @@ class MainActivity : ComponentActivity() {
 }
 
 private fun week02Variables(){
-    println("Week 02: variables")
+//    println("Week 02: variables")
+//
+//    val courseName = "Mobile Programing"
+//    //courseName = "IOT Programing"
+//    var week = 1
+//    week = 2
+//    println("Course : $courseName")
+//    println("Week : $week")
 
-    val courseName = "Mobile Programing"
-    //courseName = "IOT Programing"
-    var week = 1
-    week = 2
-    println("Course : $courseName")
-    println("Week : $week")
+    println("== kotlin Variables ==")
+
+    // val(immutable) vs var(mutable)
+    val name = "Android"
+    var version = 8
+
+    println("Hello $name $version")
+
+    val age: Int = 24
+    val height: Double = 177.7
+    val isStudent: Boolean = true
+
+    println("Age: $age, Height: $height, student: $isStudent")
+
+//    var nickname: String = null
+    var nickname: String? = null
+    nickname = "mirae"
+    println("Nickname: $nickname ${nickname?.length}")
 }
 
 @Composable
