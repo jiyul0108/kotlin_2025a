@@ -11,18 +11,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         val buttonGreet = findViewById<Button>(R.id.buttonGreet)
+        val buttonColor = findViewById<Button>(R.id.buttonColor)
+        val buttonCount = findViewById<Button>(R.id.buttonCounter)
+
 
         buttonGreet.setOnClickListener {
             startActivity(Intent(this, GreetingActivity::class.java))
 
-            val buttonColor = findViewById<Button>(R.id.buttonColor)
 
-            buttonColor.setOnClickListener {
-                startActivity(Intent(this, ColorActivity::class.java))
+        }
+        buttonColor.setOnClickListener {
+            startActivity(Intent(this, ColorActivity::class.java))
 
-            }
+        }
+        buttonCount.setOnClickListener {
+            startActivity(Intent(this, CounterActivity::class.java))
         }
     }
 }
