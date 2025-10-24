@@ -1,4 +1,4 @@
-package com.appweek06
+package com.appweek07
 
 import android.os.Bundle
 import android.util.Log
@@ -373,7 +373,7 @@ class MainActivity : AppCompatActivity() {
             .setMessage(message)
             .setPositiveButton("OK", null)
             .show()
-        }
+    }
 
     private fun toggleTaskCompletion(task: Task, position: Int) {
         task.isCompleted = !task.isCompleted
